@@ -1,0 +1,156 @@
+html {
+    height: 100%;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-color: #003b77;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    margin-top: 0px;
+}
+
+#stage {
+    background: white;
+    margin: 0 auto;
+    padding: 0px;
+    top: 0px;
+    position: absolute;
+}
+
+#stage h1 {
+    font-size: 28px;
+    font-weight: normal;
+}
+
+
+.box {
+    background-color: white;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.icon {
+    background-image: url("../img/icon.PNG");
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+.cell {
+    border: 1px solid #a7a9ac;
+    float: left;
+    padding: 0px;
+    width: 50px;
+    height: 50px;
+}
+
+.trap {
+    background-image: url(../img/letterB.png); 
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+}
+
+/*
+p .trap {
+    color: black;
+    font-size: 12px;
+    border: 1px solid black;
+}
+*/
+
+.cell h2 {
+    background-color width: inherit;
+    float: left;
+    font-size: 12px;
+}
+
+.cell p {
+    font-size: 12px;
+    width: 60px;
+    font-weight: bold;
+    padding: 2px;
+    margin-left: -5px;
+
+}
+
+p .assignment {
+    color: #E1185C;
+    font-size: 12px;
+    border: 1px solid #E1185C;
+}
+
+.today {
+    background-color: #ddd;
+}
+
+
+#welcome {
+    border: 10px solid #003b77;
+    border-left-width: 50px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+#game {}
+
+#ToDo {
+    position: absolute;
+    padding: 5px;
+    background-color: white;
+    overflow: hidden;
+}
+
+#ToDo h1 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#ToDo h2 {
+    font-size: 18px;
+}
+
+ul {
+    padding-left: 10px;
+}
+
+li {
+    list-style-type: none;
+}
+
+li span:first-of-type {
+    color: #003b77;
+    font-weight: bold;
+}
+
+li span:nth-of-type(2) {
+    color: #a7a9ac;
+}
+
+.January h1 {}
+
+.February h1 {}
+
+.March h1 {}
+
+.April h1 {}
+
+.May h1 {}
+
+.June h1 {}
+
+.July h1 {}
+
+.August h1 {}
+
+.September h1 {}
+
+.October h1 {}
+
+.November h1 {}
+
+.December h1 {}
