@@ -28,7 +28,7 @@ $(document).ready(function () {
     const today = new Date();
     const MONTHNAME = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
-//    const WINGDINGS = ["&#10026;", "&#10047;", "&#10052;", "&#9992;", "&#9991;"];
+    //    const WINGDINGS = ["&#10026;", "&#10047;", "&#10052;", "&#9992;", "&#9991;"];
 
     let timer;
 
@@ -443,7 +443,7 @@ $(document).ready(function () {
         let $w = $("#welcome");
 
         //fill box
-        insert = "<p><b>Ian's Very A+ Final Project.</b> Use WASD or arrow keys to move your position on the calendar. Try to complete as many assignments as possible, and remember to not get a B.</p>";
+        insert = "<p><b>Ian's Very A+ Final Project.</b> Use WASD or arrow keys to move your position on the calendar. Try to complete as many assignments as possible, and don't get a B.</p>";
         insert += "<br><br><button id='btnStart' type='button'>Start</button>";
 
         $w.html(insert);
@@ -493,6 +493,11 @@ $(document).ready(function () {
 
         $w.html(insert);
 
+        $("#btnStart").click(function () {
+            $("#welcome").remove();
+            NewGame();
+        });
+
         PositionElements();
     }
 
@@ -511,6 +516,11 @@ $(document).ready(function () {
         insert += "<br><br><button id='btnStart' type='button'>Play again</button>";
 
         $w.html(insert);
+
+        $("#btnStart").click(function () {
+            $("#welcome").remove();
+            NewGame();
+        });
 
         PositionElements();
     }
