@@ -236,9 +236,7 @@ $(document).ready(function () {
 
         this.chase = function () {
             let xx = Math.abs(this.x - player.x);
-            console.log("xAbs:" + xx);
             let yy = Math.abs(this.y - player.y);
-            console.log("yAbs:" + yy);
 
             if (xx >= yy && this.left == true) {
                 if (player.x > this.x) {
