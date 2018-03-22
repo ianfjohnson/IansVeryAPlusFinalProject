@@ -306,7 +306,7 @@ $(document).ready(function () {
     };
 
     //Sets css position of stage
-    function SetStage() {
+    let SetStage = () => {
         winWidth = $(window).width();
         winHeight = $(window).height();
 
@@ -342,7 +342,7 @@ $(document).ready(function () {
         };
     };
 
-    function SetRightBanner() {
+    let SetRightBanner = () => {
         let $r = $("#ToDo");
 
         $r.append("<h1>Recent Activity</h1><h2 class='dbg'>Progress: 0%</h2><br/>");
@@ -432,7 +432,7 @@ $(document).ready(function () {
     ///////////////////
 
     //begins welcome screen process
-    function Welcome() {
+    let Welcome = () => {
         //create box
         let insert = "<h1>Dashboard</h1><hr>";
         insert += "<div id='welcome' class='box'></div>";
@@ -451,7 +451,7 @@ $(document).ready(function () {
     };
 
     //begins gameplay process
-    function NewGame() {
+    let NewGame = () => {
         $("#welcome").remove();
 
         CreateObjects();
@@ -524,7 +524,7 @@ $(document).ready(function () {
     }
 
     //creates gameplay objects
-    function CreateObjects() {
+    let CreateObjects = () => {
         let gameDiv = "<div id='game' class='box'></div>";
         let toDoDiv = "<div id='ToDo'></div>"
         //        let playerDiv = "<div id='player'></div>";
@@ -536,7 +536,7 @@ $(document).ready(function () {
     };
 
     //creates player obj
-    function CreatePlayer() {
+    let CreatePlayer = () => {
         let x = today.getDay();
         let y = 0;
 
@@ -546,7 +546,7 @@ $(document).ready(function () {
     };
 
     //creates game board
-    function CreateBoard() {
+    let CreateBoard = () => {
         let output = new Array();
 
         let date = today.getDate();
